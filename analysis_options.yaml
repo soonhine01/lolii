@@ -1,0 +1,17 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: false
+    prefer_const_constructors: true
+    prefer_final_locals: true
+    avoid_unused_constructor_parameters: true
+    always_declare_return_types: true
+    avoid_empty_else: true
+    unnecessary_null_in_if_null_operators: true
+    type_annotate_public_apis: true
+
+analyzer:
+  errors:
+    unused_import: warning
+    deprecated_member_use: warning
