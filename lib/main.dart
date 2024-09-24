@@ -79,7 +79,22 @@ class HomePage extends StatelessWidget {
         ),
         trailing: const Icon(Icons.arrow_forward_ios),
         onTap: () {
-          Navigator.pushNamed(context, routeName);
+          // Her sayfa için doğru routeName ile yönlendirme yapılıyor
+          if (title == 'Profil') {
+            Navigator.pushNamed(context, '/profile');
+          } else if (title == 'Mesajlar') {
+            Navigator.pushNamed(context, '/chat');
+          } else if (title == 'Enerji Tasarrufu') {
+            Navigator.pushNamed(context, '/energySaving');
+          } else if (title == 'Atık Yönetimi') {
+            Navigator.pushNamed(context, '/wasteManagement');
+          } else if (title == 'Doğada Yürüyüş') {
+            Navigator.pushNamed(context, '/walking');
+          } else if (title == 'Koşma') {
+            Navigator.pushNamed(context, '/running');
+          } else if (title == 'Bisiklet Sürme') {
+            Navigator.pushNamed(context, '/cycling');
+          }
         },
       ),
     );
